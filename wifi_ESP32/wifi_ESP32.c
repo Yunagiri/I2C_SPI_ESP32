@@ -161,7 +161,6 @@ uint16_t getData(uint8_t reg){
 }
 
 float getPressionSPI(){
-  //Repris du code SPI de mon binôme Romain
   digitalWrite(cs_alt,LOW);
   SPI.transfer(0x21); //registre de controle 3
   SPI.transfer(1);    //demande de mesure
